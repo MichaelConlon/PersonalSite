@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import {Providers} from "./providers";
-import { Inter } from "next/font/google";
+import { lora } from "@/app/ui/fonts";
+import Header from "@/app/ui/header";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Michael B Conlon Jr - Consultant",
@@ -17,7 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className='dark'>
-      <body className={inter.  className="" }>
+      <body className={`${lora.className} antialiased`}>
+        <Header />
         <Providers>
           {children}
         </Providers>
