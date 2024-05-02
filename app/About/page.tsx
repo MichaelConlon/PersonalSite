@@ -31,7 +31,7 @@ export default function Page() {
 
             <div className="flex w-full lg:w-7/12 justify-center lg:justify-start lg:p-2">
                 <TitledText 
-                className="w-11/12 lg:w-6/12"
+                className="w-11/12"
                 title="Michael Bennett Conlon Jr"
                 titleStyle="text-orange-800 text-5xl font-medium"
                 text="With over seven years of professional experience in software consulting, I've had the privilege of diving deep into the world of technology and Finance and crafting solutions that make a difference. Based in the vibrant city of Charlotte, North Carolina, I thrive on the dynamic challenges that come with being a software developer. \n
