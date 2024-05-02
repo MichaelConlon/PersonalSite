@@ -1,20 +1,27 @@
 'use client'
 
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
 import { usePathname } from 'next/navigation'
 import Image from "next/image";
+import { useState } from "react";
 
-
+const links = [
+    {name: "Home", href:"/", isMenuOnly: true},
+    {name: "About", href:"/About", isMenuOnly: false},
+    {name: "Contact", href:"/Contact", isMenuOnly: false},
+    {name: "Resume", href:"/Resume", isMenuOnly: false} ]
 
 export default function Header() {
-    const links = [
-        {name: "About", href:"/About"},
-        {name: "Contact", href:"/Contact"},
-        {name: "Resume", href:"/Resume"} ]
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     const pathname = usePathname();
-    return <Navbar isBordered maxWidth="2xl" height="7rem" className="flex flex-col md:flex-row bg-neutral-600/75">
-        <div className="">
-            <NavbarBrand >
+    return <Navbar onMenuOpenChange={setIsMenuOpen} isBordered maxWidth="2xl" height="7rem" >
+        <NavbarContent className="gap-8">
+            <NavbarMenuToggle
+                aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                className="sm:hidden gap-4"
+            />
+            <NavbarBrand className="justify-end sm:justify-start">
                 <Link href="/">
                     <Image 
                         src="/signature_logo.png"
@@ -24,15 +31,35 @@ export default function Header() {
                     />
                 </Link>
             </NavbarBrand>
+        </NavbarContent>
 
-        </div>
-        <NavbarContent justify="center">
+        <NavbarContent className="hidden sm:flex gap-4" justify="center">
             {links.map(link => (
-                <NavbarItem isActive={link.href===pathname} key={link.name}>
-                    <Link size="lg" isBlock color="foreground" href={link.href}>{link.name}</Link>
-                </NavbarItem>
+                !(link.isMenuOnly) ? (
+                    <NavbarItem isActive={link.href===pathname} key={link.name}>
+                        <Link size="lg" isBlock color="foreground" href={link.href}>{link.name}</Link>
+                    </NavbarItem>
+                ) : (
+                    <></>
+                )
             ))}
 
         </NavbarContent>
+        <NavbarMenu>
+        {links.map((link, index) => (
+          <NavbarMenuItem isActive={link.href===pathname} key={`${link.name}-${index}`}>
+            <Link
+              color={
+                "foreground"
+              }
+              className="w-full"
+              href={link.href}
+              size="lg"
+            >
+              {link.name}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
     </Navbar>
 }

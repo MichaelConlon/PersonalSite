@@ -21,7 +21,7 @@ export default function Hero(
                 {/* Optional Subtext */}
                 <div className="md:w-7/12 w-full flex flex-col items-center py-8 align-middle">
                     { subtext ? (
-                        <div className="flex h-1/3 w-1/2 my-8 items-center">
+                        <div className="flex h-1/3 w-11/12 lg:w-1/2 my-8 items-center">
                             <h2 className="text-2xl text-slate-100 text-center leading-relaxed">
                                 {subtext}
                             </h2>
