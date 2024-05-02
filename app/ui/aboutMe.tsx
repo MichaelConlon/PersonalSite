@@ -3,7 +3,7 @@ import TitledText from "@/app/ui/titledText"
 
 export default function aboutMe() {
 
-    return <div className="flex flex-col-reverse lg:flex-row w-9/12 lg:w-10/12 bg-stone-100">
+    return <div className="flex flex-col-reverse lg:flex-row w-full lg:w-10/12 bg-stone-100">
 
         {/* Image - hide on smaller screens */}
         <div className="flex flex-row w-full xl:w-8/12 bg-white justify-center">

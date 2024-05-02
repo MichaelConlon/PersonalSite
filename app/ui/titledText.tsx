@@ -6,8 +6,8 @@ import clsx from 'clsx';
 export default function TitledText(
     {title, titleStyle, text, isDivided, buttonText, buttonLink, className} 
     : {title: string, titleStyle?: string, text: string, isDivided?: boolean, buttonText?: string, buttonLink?: string, className?:string}) {
-    return <div className={clsx(className, "flex flex-col my-4 justify-center")}>
-        <div className="flex flex-col py-2 px-16">
+    return <div className={clsx(className, "flex flex-col my-4")}>
+        <div className="flex flex-col py-2 lg:px-16 items-center lg:items-start">
 
             {/* Title */}
             <div className="flex md:pb-4">
@@ -24,13 +24,13 @@ export default function TitledText(
             )}
             
             {/* Text */}
-            <div className="flex w-full flex-col justify-left py-4 text-lg">
+            <div className="flex w-11/12 flex-col py-4 text-lg">
                 { text.split('\\n').map(line => (<p key={line} className="mb-4 leading-loose text-gray-600">{line}</p>)) }
             </div>
 
             {/* Optional button with link at the bottom of the card */}
             {buttonText || buttonLink ? (
-            <div className="flex w-1/12 justify-start justify-items-start items-left">
+            <div className="flex w-full justify-center lg:justify-start">
                 <Link href={buttonLink? buttonLink : ""}>
                     <Button className="my-4 py-0.5 bg-black">{buttonText}</Button>
                 </Link>

@@ -8,20 +8,30 @@ export default function Page() {
             title="About Me"
         />
         <div className="flex w-full flex-col lg:flex-row bg-stone-200 my-4">
-            <div className="flex w-full xl:w-5/12 justify-center p-12">
+            <div className="flex w-full block lg:hidden p-12 justify-center">
                 <Image
                     src="/michael_conlon.jpg"
-                    width="0"
-                    height="0"
+                    width="384"
+                    height="344"
                     alt="Profile photo of Michael B Conlon Jr"
                     sizes="100vw"
-                    style={{ width: 'auto', height: '448px' }}>
+                    style={{ width: '384', height: 'auto' }}>
+                </Image>
+            </div>
+            <div className="flex hidden lg:block w-5/12 justify-center p-12">
+                <Image
+                    src="/michael_conlon.jpg"
+                    width="344"
+                    height="488"
+                    alt="Profile photo of Michael B Conlon Jr"
+                    sizes="100vw"
+                    style={{ width: 'auto', height: '488' }}>
                 </Image>
             </div>
 
-            <div className="flex w-full xl:w-7/12 justify-center lg:justify-start p-6 lg:p-2 ">
+            <div className="flex w-full lg:w-7/12 justify-center lg:justify-start p-6 lg:p-2 ">
                 <TitledText 
-                className="w-10/12"
+                className="w-11/12"
                 title="Michael Bennett Conlon Jr"
                 titleStyle="text-orange-800 text-5xl font-medium"
                 text="With over seven years of professional experience in software consulting, I've had the privilege of diving deep into the world of technology and Finance and crafting solutions that make a difference. Based in the vibrant city of Charlotte, North Carolina, I thrive on the dynamic challenges that come with being a software developer. \n

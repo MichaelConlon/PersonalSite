@@ -15,7 +15,7 @@ export default function Home() {
       />
       <div className="flex w-full flex-col bg-stone-100 items-center my-4">
         <TitledText 
-          className="w-9/12 lg:w-6/12"
+          className="w-11/12 lg:w-6/12"
           title="Write a title here. Click to edit and add your own."
           text="This is a paragraph area where you can add your own text. Just click “Edit Text” or double click here to add your own content and make changes to the font. It's a great place to tell a story about your business and let users know more about you."
           isDivided>
@@ -26,7 +26,7 @@ export default function Home() {
       </div>
       <div className="flex w-full flex-col bg-stone-100 items-center my-32">
         <TitleSection
-          className="w-9/12 lg:w-7/12"
+          className="w-11/12 lg:w-7/12"
           title="Find the code for this site and other projects on my github page!">
         </TitleSection>
       </div>
