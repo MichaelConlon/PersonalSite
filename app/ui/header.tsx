@@ -15,7 +15,7 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const pathname = usePathname();
-    return <Navbar onMenuOpenChange={setIsMenuOpen} isBordered maxWidth="2xl" height="7rem" >
+    return <Navbar onMenuOpenChange={setIsMenuOpen} isBordered maxWidth="2xl" height="7rem" className="bg-neutral-600/75">
         <NavbarContent className="gap-8">
             <NavbarMenuToggle
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}

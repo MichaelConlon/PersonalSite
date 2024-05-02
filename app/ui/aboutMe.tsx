@@ -6,7 +6,7 @@ export default function aboutMe() {
     return <div className="flex flex-col-reverse lg:flex-row w-full lg:w-10/12 bg-stone-100">
 
         {/* Image - hide on smaller screens */}
-        <div className="flex flex-row w-full xl:w-8/12 bg-white justify-center">
+        <div className="flex flex-row w-full xl:w-7/12 bg-white justify-center items-center">
             <TitledText 
                 className="w-11/12 lg:w-10/12"
                 title="Michael B Conlon Jr"
@@ -18,7 +18,7 @@ export default function aboutMe() {
         </div>
 
         {/* Image - hide on smaller screens */}
-        <div className="block lg:hidden flex w-full bg-white p-6 justify-center ">
+        <div className="block lg:hidden flex w-full bg-white p-6 justify-center">
             <Image
                 className="w-9/12"
                 src="/michael_conlon.jpg"
@@ -29,7 +29,7 @@ export default function aboutMe() {
                 style={{ width: '344', height: 'auto' }}>
             </Image>
         </div>
-        <div className="hidden lg:block flex w-4/12 bg-white justify-end lg:p-2">
+        <div className="hidden lg:flex flex w-5/12 bg-white justify-end items-center pr-4">
             <Image
                 className="w-11/12"
                 src="/michael_conlon.jpg"
