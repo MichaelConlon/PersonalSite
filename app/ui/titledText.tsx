@@ -7,11 +7,11 @@ export default function TitledText(
     {title, titleStyle, text, isDivided, buttonText, buttonLink, className} 
     : {title: string, titleStyle?: string, text: string, isDivided?: boolean, buttonText?: string, buttonLink?: string, className?:string}) {
     return <div className={clsx(className, "flex flex-col my-4 justify-center")}>
-        <div className="flex flex-col py-8 px-16">
+        <div className="flex flex-col py-2 px-16">
 
             {/* Title */}
             <div className="flex md:pb-4">
-                <p className={titleStyle ? `${titleStyle} text-center lg:text-left` : "text-3xl text-gray-600 font-medium text-center lg:text-left"}>{title}</p>
+                <p className={titleStyle ? `${titleStyle} text-center lg:text-left` : "text-5xl text-gray-600 font-medium text-center lg:text-left"}>{title}</p>
             </div>
 
             {/* Optional dividing line between title and text */}
@@ -24,7 +24,7 @@ export default function TitledText(
             )}
             
             {/* Text */}
-            <div className="flex w-full flex-col justify-left py-4">
+            <div className="flex w-full flex-col justify-left py-4 text-lg">
                 { text.split('\\n').map(line => (<p key={line} className="mb-4 leading-loose text-gray-600">{line}</p>)) }
             </div>
 

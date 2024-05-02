@@ -1,6 +1,8 @@
 import Hero from "@/app/ui/hero";
 import TitledText from "@/app/ui/titledText";
+import TitleSection from "@/app/ui/titleSection";
 import AboutMe from "@/app/ui/aboutMe"
+import ImageUnderlayCard from "@/app/ui/imageUnderlayCard";
 
 export default function Home() {
   return (
@@ -11,15 +13,26 @@ export default function Home() {
         buttonText="Read More"
         buttonLink="/Blog"
       />
-      <div className="flex w-full flex-col bg-stone-200 items-center my-4">
+      <div className="flex w-full flex-col bg-stone-100 items-center my-4">
         <TitledText 
-          className="w-9/12 lg:w-5/12"
+          className="w-9/12 lg:w-6/12"
           title="Write a title here. Click to edit and add your own."
           text="This is a paragraph area where you can add your own text. Just click “Edit Text” or double click here to add your own content and make changes to the font. It's a great place to tell a story about your business and let users know more about you."
           isDivided>
         </TitledText>
       </div>
-      <AboutMe></AboutMe>
+      <div className="flex w-full flex-col items-center my-4">
+        <AboutMe></AboutMe>
+      </div>
+      <div className="flex w-full flex-col bg-stone-100 items-center my-32">
+        <TitleSection
+          className="w-9/12 lg:w-7/12"
+          title="Find the code for this site and other projects on my github page!">
+        </TitleSection>
+      </div>
+      <div className="flex w-full flex-col items-center my-4 bg-stone-100">
+        <ImageUnderlayCard/>
+      </div>
     </main>
   );
 }
