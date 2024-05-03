@@ -8,7 +8,7 @@ export default function Page() {
             title="About Me"
         />
         <div className="flex w-full flex-col lg:flex-row bg-stone-200 py-4 items-center lg:items-start">
-            <div className="flex w-9/12 block lg:hidden p-12 justify-center">
+            <div className="flex w-full sm:w-9/12 block lg:hidden p-12 justify-center">
                 <Image
                     src="/michael_conlon.jpg"
                     width="800"

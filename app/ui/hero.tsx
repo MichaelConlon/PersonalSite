@@ -7,12 +7,12 @@ export default function Hero(
     {title: string, subtext?: string, buttonText?: string, buttonLink?: string}) {
     return (
         <div style={{ backgroundImage: `url(${backgroundImage.src})`, }} className="w-full bg-cover bg-center" >
-            <div className="columns-2 w-full flex flex-col md:flex-row  backdrop-blur-sm  backdrop-brightness-25  bg-blend-darken py-6 lg:py-20 px-4 lg:px-20">
+            <div className="columns-2 w-full flex flex-col md:flex-row  backdrop-blur-sm  backdrop-brightness-25  bg-blend-darken lg:py-20 px-4 lg:px-20">
 
                 {/* Title */}
                 <div className="w-full md:w-6/12 flex flex-col justify-center items-center pt-8 pb-0 md:pb-8 md:pl-24">
                     <div className="flex justify-center items-center w-10/12">
-                        <p className="text-5xl leading-tight lg:leading-tight lg:text-6xl text-center lg:text-left">
+                        <p className="text-5xl px-6 lg:px-0leading-tight lg:leading-tight lg:text-6xl text-center lg:text-left">
                             {title}
                         </p>
                     </div>
