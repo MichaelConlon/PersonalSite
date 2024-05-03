@@ -8,7 +8,6 @@ import { useState } from "react";
 const links = [
     {name: "Home", href:"/", isMenuOnly: true},
     {name: "About", href:"/About", isMenuOnly: false},
-    {name: "Contact", href:"/Contact", isMenuOnly: false},
     {name: "Experience", href:"/Experience", isMenuOnly: false} ]
 
 export default function Header() {
@@ -24,6 +23,7 @@ export default function Header() {
             <NavbarBrand className="justify-end sm:justify-start">
                 <Link href="/">
                     <Image 
+                        priority
                         src="/signature_logo.png"
                         width={325}
                         height={93}
@@ -37,7 +37,7 @@ export default function Header() {
             {links.map((link, index) => (
                 !(link.isMenuOnly) ? (
                     <NavbarItem isActive={link.href===pathname} key={`${link.name}-${index}`}>
-                        <Link size="lg" isBlock color="foreground" href={link.href}>{link.name}</Link>
+                        <Link size="lg" isBlock className="text-white" href={link.href}>{link.name}</Link>
                     </NavbarItem>
                 ) : (
                     <div key={`${link.name}-${index}`}></div>

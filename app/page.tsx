@@ -31,7 +31,13 @@ export default function Home() {
         </TitleSection>
       </div>
       <div className="flex w-full flex-col items-center my-4 bg-stone-100">
-        <ImageUnderlayCard/>
+        <ImageUnderlayCard
+          title="Want to work together?"
+          text="Whether you're interested in working together on a single project or offering me a job, I'm always happy to hear from you!" 
+          buttonText="Get in Touch on LinkedIn!"
+          buttonLink="https://www.linkedin.com/in/michaelbconlonjr/"
+          isExternalLink
+        />
       </div>
     </main>
   );

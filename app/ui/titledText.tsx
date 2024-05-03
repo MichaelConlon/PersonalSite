@@ -4,9 +4,11 @@ import clsx from 'clsx';
 
 
 export default function TitledText(
-    {title, titleStyle, text, isDivided, buttonText, buttonLink, className} 
-    : {title: string, titleStyle?: string, text: string, isDivided?: boolean, buttonText?: string, buttonLink?: string, className?:string}) {
+    {title, titleStyle, text, isDivided, buttonText, buttonLink, className, isExternalLink} 
+    : {title: string, titleStyle?: string, text: string, isDivided?: boolean, buttonText?: string, buttonLink?: string, className?:string, isExternalLink?:boolean}) {
+
     return <div className={clsx(className, "flex flex-col my-4")}>
+       
         <div className="flex flex-col py-2 lg:px-16 items-center lg:items-start">
 
             {/* Title */}
@@ -31,8 +33,8 @@ export default function TitledText(
             {/* Optional button with link at the bottom of the card */}
             {buttonText || buttonLink ? (
             <div className="flex w-full justify-center lg:justify-start">
-                <Link href={buttonLink? buttonLink : ""}>
-                    <Button className="my-4 py-0.5 bg-black">{buttonText}</Button>
+                <Link target={isExternalLink?"blank":""} href={buttonLink? buttonLink : ""}>
+                    <Button className="my-4 py-0.5 bg-orange-800 text-white">{buttonText}</Button>
                 </Link>
             </div>
             ) : (

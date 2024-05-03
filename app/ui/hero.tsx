@@ -36,7 +36,7 @@ export default function Hero(
                         { buttonText || buttonLink ? (
                             <div className="flex w-full align-middle items-center">
                                 <Link href={buttonLink ? buttonLink : ""} >
-                                    <Button variant="ghost" color="primary">{buttonText}</Button>
+                                    <Button variant="ghost" className="text-white border-orange-800" size="lg">{buttonText}</Button>
                                 </Link>
                             </div>
                             ) : (
