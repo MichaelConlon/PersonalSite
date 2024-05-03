@@ -18,26 +18,28 @@ export default function aboutMe() {
         </div>
 
         {/* Image - hide on smaller screens */}
-        <div className="block lg:hidden flex w-full bg-white p-6 justify-center">
-            <Image
-                className="w-9/12"
-                src="/michael_conlon.jpg"
-                width="0"
-                height="0"
-                alt="Profile photo of Michael B Conlon Jr"
-                sizes="100vw"
-                style={{ width: '344', height: 'auto' }}>
-            </Image>
+        <div className="block lg:hidden flex w-full bg-white justify-center">
+            <div className="block lg:hidden flex w-10/12 p-6 justify-center">
+                <Image
+                    className="w-9/12"
+                    src="/michael_conlon.jpg"
+                    width="800"
+                    height="932"
+                    alt="Profile photo of Michael B Conlon Jr"
+                    sizes="100vw"
+                    style={{ width: '800', height: 'auto' }}>
+                </Image>
+            </div>
         </div>
         <div className="hidden lg:flex flex w-5/12 bg-white justify-end items-center pr-4">
             <Image
                 className="w-11/12"
                 src="/michael_conlon.jpg"
-                width="0"
-                height="0"
+                width="800"
+                height="932"
                 alt="Profile photo of Michael B Conlon Jr"
-                sizes="100vw"
-                style={{ width: 'auto', height: '488' }}>
+                sizes="120vw"
+                style={{ width: 'auto', height: '932' }}>
             </Image>
         </div>
     </div>

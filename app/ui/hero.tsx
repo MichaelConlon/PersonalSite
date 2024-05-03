@@ -10,8 +10,8 @@ export default function Hero(
             <div className="columns-2 w-full flex flex-col md:flex-row  backdrop-blur-sm  backdrop-brightness-25  bg-blend-darken py-6 lg:py-20 px-4 lg:px-20">
 
                 {/* Title */}
-                <div className="w-full md:w-5/12 flex flex-col justify-center items-center pt-8 pb-0 md:pb-8">
-                    <div className="flex justify-center items-center">
+                <div className="w-full md:w-6/12 flex flex-col justify-center items-center pt-8 pb-0 md:pb-8 md:pl-24">
+                    <div className="flex justify-center items-center w-10/12">
                         <p className="text-5xl leading-tight lg:leading-tight lg:text-6xl text-center lg:text-left">
                             {title}
                         </p>
@@ -19,7 +19,7 @@ export default function Hero(
                 </div>
 
                 {/* Optional Subtext */}
-                <div className="md:w-7/12 w-full flex flex-col items-center py-8 align-middle">
+                <div className="md:w-6/12 w-full flex flex-col items-center py-8 align-middle">
                     { subtext ? (
                         <div className="flex h-1/3 w-11/12 lg:w-1/2 my-8 items-center">
                             <h2 className="text-2xl text-slate-100 text-center leading-relaxed">

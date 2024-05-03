@@ -7,25 +7,25 @@ export default function Page() {
         <Hero
             title="About Me"
         />
-        <div className="flex w-full flex-col lg:flex-row bg-stone-200 my-4">
-            <div className="flex w-full block lg:hidden p-12 justify-center">
+        <div className="flex w-full flex-col lg:flex-row bg-stone-200 py-4 items-center lg:items-start">
+            <div className="flex w-9/12 block lg:hidden p-12 justify-center">
                 <Image
                     src="/michael_conlon.jpg"
-                    width="384"
-                    height="344"
+                    width="800"
+                    height="932"
                     alt="Profile photo of Michael B Conlon Jr"
-                    sizes="100vw"
-                    style={{ width: '384', height: 'auto' }}>
+                    sizes="150vw"
+                    style={{ width: '800', height: 'auto' }}>
                 </Image>
             </div>
-            <div className="flex hidden lg:block w-5/12 justify-center p-12">
+            <div className="hidden lg:flex w-5/12 justify-center p-12">
                 <Image
                     src="/michael_conlon.jpg"
-                    width="344"
-                    height="488"
+                    width="800"
+                    height="932"
                     alt="Profile photo of Michael B Conlon Jr"
-                    sizes="100vw"
-                    style={{ width: 'auto', height: '488' }}>
+                    sizes="150vw"
+                    style={{ width: 'auto', height: '932' }}>
                 </Image>
             </div>
 

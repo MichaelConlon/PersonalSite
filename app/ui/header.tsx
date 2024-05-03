@@ -9,7 +9,7 @@ const links = [
     {name: "Home", href:"/", isMenuOnly: true},
     {name: "About", href:"/About", isMenuOnly: false},
     {name: "Contact", href:"/Contact", isMenuOnly: false},
-    {name: "Resume", href:"/Resume", isMenuOnly: false} ]
+    {name: "Experience", href:"/Experience", isMenuOnly: false} ]
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,13 +34,13 @@ export default function Header() {
         </NavbarContent>
 
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
-            {links.map(link => (
+            {links.map((link, index) => (
                 !(link.isMenuOnly) ? (
-                    <NavbarItem isActive={link.href===pathname} key={link.name}>
+                    <NavbarItem isActive={link.href===pathname} key={`${link.name}-${index}`}>
                         <Link size="lg" isBlock color="foreground" href={link.href}>{link.name}</Link>
                     </NavbarItem>
                 ) : (
-                    <></>
+                    <div key={`${link.name}-${index}`}></div>
                 )
             ))}
 
