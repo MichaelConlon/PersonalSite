@@ -3,6 +3,7 @@ import {Providers} from "./providers";
 import { lora } from "@/app/ui/fonts";
 import Header from "@/app/ui/header";
 import "./globals.css";
+import Footer from "@/app/ui/footer";
 
 export const metadata: Metadata = {
   title: "Michael B Conlon Jr - Consultant",
@@ -21,6 +22,7 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <Footer />
       </body>
     </html>
   );
