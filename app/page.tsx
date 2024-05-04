@@ -11,7 +11,7 @@ export default function Home() {
         title="Software Developer & Programming Enthusiast"
         subtext="Just another software developer who thought it'd be a good idea to make his own website"
         buttonText="Read More"
-        buttonLink="/Blog"
+        buttonLink="/Experience"
       />
       <div className="flex w-full flex-col bg-stone-100 items-center mb-4 mt-8">
         <TitledText 
