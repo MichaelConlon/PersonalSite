@@ -8,12 +8,12 @@ export default function Home() {
   return (
     <main className="flex w-full min-h-screen flex-col items-center bg-stone-100">
       <Hero 
-        title="Software Consultant & Programming Enthusiast"
-        subtext="Just another software developer who blogs in his free time"
+        title="Software Developer & Programming Enthusiast"
+        subtext="Just another software developer who thought it'd be a good idea to make his own website"
         buttonText="Read More"
         buttonLink="/Blog"
       />
-      <div className="flex w-full flex-col bg-stone-100 items-center my-4">
+      <div className="flex w-full flex-col bg-stone-100 items-center mb-4 mt-8">
         <TitledText 
           className="w-11/12 lg:w-6/12"
           title="Write a title here. Click to edit and add your own."

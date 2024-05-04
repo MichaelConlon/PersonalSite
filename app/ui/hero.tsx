@@ -12,7 +12,7 @@ export default function Hero(
                 {/* Title */}
                 <div className="w-full md:w-6/12 flex flex-col justify-center items-center pt-8 pb-0 md:pb-8 md:pl-24">
                     <div className="flex justify-center items-center w-10/12">
-                        <p className="text-5xl px-6 lg:px-0leading-tight lg:leading-tight lg:text-6xl text-center lg:text-left">
+                        <p className="text-5xl px-0 leading-tight lg:leading-tight lg:text-6xl text-center lg:text-left">
                             {title}
                         </p>
                     </div>
