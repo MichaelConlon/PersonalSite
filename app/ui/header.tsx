@@ -1,6 +1,7 @@
 'use client'
 
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/navbar";
+import Link from "next/link"
 import { usePathname } from 'next/navigation'
 import Image from "next/image";
 import { useState } from "react";
@@ -37,7 +38,7 @@ export default function Header() {
             {links.map((link, index) => (
                 !(link.isMenuOnly) ? (
                     <NavbarItem isActive={link.href===pathname} key={`${link.name}-${index}`}>
-                        <Link size="lg" isBlock className="text-white" href={link.href}>{link.name}</Link>
+                        <Link className="text-white" href={link.href}>{link.name}</Link>
                     </NavbarItem>
                 ) : (
                     <div key={`${link.name}-${index}`}></div>
@@ -54,7 +55,6 @@ export default function Header() {
               }
               className="w-full"
               href={link.href}
-              size="lg"
             >
               {link.name}
             </Link>

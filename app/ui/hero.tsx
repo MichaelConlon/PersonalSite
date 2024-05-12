@@ -1,6 +1,6 @@
 import Link from "next/link"
 import clsx from 'clsx';
-import {Button} from "@nextui-org/react"
+import {Button} from "@nextui-org/button"
 import backgroundImage from "@/public/hero-image.jpg"
 
 export default function Hero(

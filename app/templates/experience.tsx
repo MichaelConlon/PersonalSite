@@ -2,7 +2,6 @@
 
 import ExperienceBullet from "../ui/experienceBullet"
 import {Accordion, AccordionItem} from "@nextui-org/accordion";
-import ExperienceTitle from "../ui/experienceTitle";
 
 let endavaExperience = [
     {title:"Tech Lead | Primis Bank Project",
@@ -62,12 +61,12 @@ export default function Experience() {
                             <ExperienceBullet title={item.title} bullets={item.bullets} key={item.key} />
                         )}
                 </AccordionItem>
-                <AccordionItem key="turq" aria-label="Turq" title="Turq" subtitle=" Jun 2020 - Oct 2021" classNames={{title:"text-orange-800 text-4xl lg:text-4xl"}}>
+                <AccordionItem key="turq" aria-label="Turq" title="Turq" subtitle="Jun 2020 - Oct 2021" classNames={{title:"text-orange-800 text-4xl lg:text-4xl"}}>
                         {turqExperience.map((item) =>  
                             <ExperienceBullet title={item.title} bullets={item.bullets} key={item.key} />
                         )}
                 </AccordionItem>
-                <AccordionItem key="education" aria-label="Education" title="Education" classNames={{title:"text-orange-800 text-4xl lg:text-4xl"}}>
+                <AccordionItem key="education" aria-label="Education" title="Education" subtitle="August 2013 - May 2017" classNames={{title:"text-orange-800 text-4xl lg:text-4xl"}}>
                     <ExperienceBullet title="North Carolina State University" bullets={['Bachelor of Science (B.S.) Computer Science (Jun 2017)']}/>
                 </AccordionItem>
                 <AccordionItem key="skills" aria-label="Skills" title="Skills" classNames={{title:"text-orange-800 text-4xl lg:text-4xl",content:"flex flex-col lg:flex-row"}}>
