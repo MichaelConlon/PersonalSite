@@ -41,7 +41,7 @@ export default function Hero(
                         { buttonText || buttonLink ? (
                             <div className="flex h-1/2">
                                 <div className="flex w-full align-middle items-center">
-                                    <Link href={buttonLink ? buttonLink : ""} >
+                                    <Link href={buttonLink ? buttonLink : ""} prefetch>
                                         <Button variant="ghost" className="text-white border-orange-800" size="lg">{buttonText}</Button>
                                     </Link>
                                 </div>
