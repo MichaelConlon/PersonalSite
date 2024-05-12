@@ -8,7 +8,7 @@ export default function TitleSection(
 
             {/* Title */}
             <div className="flex md:pb-4">
-                <p className={titleStyle ? `${titleStyle} text-center lg:text-left` : "text-5xl text-gray-800 font-medium text-center"}>{title}</p>
+                <p className={titleStyle ? `${titleStyle} text-center lg:text-left` : "text-5xl font-medium text-center"}>{title}</p>
             </div>
         </div>
     </div>

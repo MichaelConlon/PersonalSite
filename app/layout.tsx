@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className='light'>
-      <body className={`${lora.className} antialiased min-h-svh flex flex-col bg-stone-100`}>
+      <body className={`${lora.className} antialiased min-h-svh flex flex-col bg-stone-100 dark:bg-neutral-900 text-gray-600 dark:text-slate-300`}>
         <Header />
         <Providers>
           {children}

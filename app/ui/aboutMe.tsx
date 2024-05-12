@@ -3,10 +3,10 @@ import TitledText from "@/app/ui/titledText"
 
 export default function aboutMe() {
 
-    return <div className="flex flex-col-reverse lg:flex-row w-full lg:w-9/12 bg-stone-100">
+    return <div className="flex flex-col-reverse lg:flex-row w-full lg:w-9/12 bg-white dark:bg-neutral-700">
 
         {/* Image - hide on smaller screens */}
-        <div className="flex flex-row w-full xl:w-7/12 bg-white justify-center items-center">
+        <div className="flex flex-row w-full xl:w-7/12 justify-center items-center">
             <TitledText 
                 className="w-11/12 lg:w-10/12"
                 title="Michael B Conlon Jr"
@@ -18,7 +18,7 @@ export default function aboutMe() {
         </div>
 
         {/* Image - hide on smaller screens */}
-        <div className="block lg:hidden flex w-full bg-white justify-center">
+        <div className="block lg:hidden flex w-full justify-center">
             <div className="block lg:hidden flex w-11/12 justify-center">
                 <Image
                     className="w-11/12"
@@ -31,7 +31,7 @@ export default function aboutMe() {
                 </Image>
             </div>
         </div>
-        <div className="hidden lg:flex flex w-5/12 bg-white justify-end items-center pr-4">
+        <div className="hidden lg:flex flex w-5/12 justify-end items-center pr-4">
             <Image
                 className="w-11/12"
                 src="/michael_conlon.jpg"

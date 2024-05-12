@@ -13,13 +13,13 @@ export default function TitledText(
 
             {/* Title */}
             <div className="flex md:pb-4">
-                <p className={titleStyle ? `${titleStyle} text-center lg:text-left` : "text-5xl text-gray-600 font-medium text-center lg:text-left"}>{title}</p>
+                <p className={titleStyle ? `${titleStyle} text-center lg:text-left` : "text-5xl font-medium text-center lg:text-left"}>{title}</p>
             </div>
 
             {/* Optional dividing line between title and text */}
             {isDivided ? (
                 <div className="flex w-full justify-center lg:justify-start">
-                <Divider className="w-1/12 my-12 py-0.5 bg-black" />
+                <Divider className="w-1/12 my-12 py-0.5 bg-black dark:bg-slate-100" />
                 </div>
             ) : (
                 <div></div>
@@ -27,7 +27,7 @@ export default function TitledText(
             
             {/* Text */}
             <div className="flex w-11/12 flex-col py-4 text-lg">
-                { text.split('\\n').map(line => (<p key={line} className="mb-4 leading-loose text-gray-600">{line}</p>)) }
+                { text.split('\\n').map(line => (<p key={line} className="mb-4 leading-loose">{line}</p>)) }
             </div>
 
             {/* Optional button with link at the bottom of the card */}
