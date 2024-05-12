@@ -3,7 +3,7 @@ import TitledText from "@/app/ui/titledText";
 
 export default function Page() {
     return <div>
-        <div className="flex w-full flex-col lg:flex-row bg-stone-200 py-4 items-center lg:items-start">
+        <div className="flex w-full flex-col lg:flex-row py-4 items-center lg:items-start">
             <div className="flex w-full sm:w-9/12 block lg:hidden p-12 justify-center">
                 <Image
                     src="/michael_conlon.jpg"

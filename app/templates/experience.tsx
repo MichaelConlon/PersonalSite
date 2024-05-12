@@ -54,8 +54,8 @@ let otherSkills = [
 ]
 
 export default function Experience() {
-    return <div className="flex bg-stone-100 justify-center h-full">
-        <div className="w-11/12 lg:w-8/12 py-16 bg-stone-100">
+    return <div className="flex justify-center h-full">
+        <div className="w-11/12 lg:w-8/12 py-16">
             <Accordion variant="bordered" defaultExpandedKeys={["endava","turq","education","skills"]} selectionMode="multiple">
                 <AccordionItem key="endava" aria-label="Endava" title="Endava" subtitle="Jun 2017 - Aug 2023" classNames={{title:"text-orange-800 text-4xl lg:text-4xl"}}>
                         {endavaExperience.map((item) =>  
