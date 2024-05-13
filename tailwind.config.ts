@@ -17,6 +17,13 @@ const config: Config = {
       },
       brightness: {
         25: '.25',
+      },
+      colors: {
+        'dark': 'rgb(2 2 2)',
+        'light': 'rgb(228 228 231)',
+        'accent': 'rgb(154 52 18)',
+        'off-dark':'rgb(24 24 27);',
+        'off-light': 'rgb(255 255 255)'
       }
     },
   },

@@ -20,7 +20,7 @@ export default function TitledText(
             {/* Optional dividing line between title and text */}
             {isDivided ? (
                 <div className="flex w-full justify-center lg:justify-start">
-                <Divider className="w-1/12 my-12 py-0.5 bg-black dark:bg-slate-100" />
+                <Divider className="w-1/12 my-12 py-0.5 bg-dark dark:bg-light" />
                 </div>
             ) : (
                 <div></div>
@@ -35,7 +35,7 @@ export default function TitledText(
             {buttonText || buttonLink ? (
             <div className="flex w-full justify-center lg:justify-start">
                 <Link target={isExternalLink?"blank":""} href={buttonLink? buttonLink : ""}>
-                    <Button className="my-4 py-0.5 bg-orange-800 text-white">{buttonText}</Button>
+                    <Button className="my-4 py-0.5 bg-accent text-light">{buttonText}</Button>
                 </Link>
             </div>
             ) : (

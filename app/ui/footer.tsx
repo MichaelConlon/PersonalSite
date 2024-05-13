@@ -4,13 +4,13 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { DarkModeToggle } from "@/app/ui/darkModeToggle"
 
 export default function Footer() {
-    return <div className="grow flex items-end">
-        <div className="h-32 min-h-32 bg-neutral-600 w-full flex flex-col justify-center">
+    return <div className="grow flex items-end bg-off-dark">
+        <div className="h-32 min-h-32 w-full flex flex-col justify-center">
             <div className="flex flex-row justify-center">
                 <DarkModeToggle />
             </div> 
         </div> 
-        <div className="h-32 min-h-32 bg-neutral-600 w-full flex flex-col justify-center">
+        <div className="h-32 min-h-32 w-full flex flex-col justify-center">
             <div className="flex flex-row justify-center">
                 <a href="https://github.com/MichaelConlon" target="_blank" className="px-6" style={{color: "#edffee",}}>
                     <FontAwesomeIcon icon={faGithub} size="lg" className="h-6"/>

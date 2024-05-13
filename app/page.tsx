@@ -13,7 +13,7 @@ export default function Home() {
         buttonText="Read More"
         buttonLink="/Experience"
       />
-      <div className="flex w-full flex-col items-center mb-4 mt-8">
+      <div className="flex w-full flex-col items-center mb-28 mt-48">
         <TitledText 
           className="w-11/12 lg:w-7/12"
           title="Write a title here. Click to edit and add your own."
@@ -21,16 +21,16 @@ export default function Home() {
           isDivided>
         </TitledText>
       </div>
-      <div className="flex w-full flex-col items-center my-4">
+      <div className="flex w-full flex-col items-center my-28">
         <AboutMe></AboutMe>
       </div>
-      <div className="flex w-full flex-col items-center my-32">
+      <div className="flex w-full flex-col items-center my-56">
         <TitleSection
           className="w-11/12 lg:w-7/12"
           title="Find the code for this site and other projects on my github page!">
         </TitleSection>
       </div>
-      <div className="flex w-full flex-col items-center my-4">
+      <div className="flex w-full flex-col items-center mt-28 mb-56">
         <ImageUnderlayCard
           title="Want to work together?"
           text="Whether you're interested in working together on a single project or offering me a job, I'm always happy to hear from you!" 
