@@ -34,7 +34,7 @@ export default function TitledText(
             {/* Optional button with link at the bottom of the card */}
             {buttonText || buttonLink ? (
             <div className="flex w-full justify-center lg:justify-start">
-                <Link target={isExternalLink?"blank":""} href={buttonLink? buttonLink : ""}>
+                <Link passHref legacyBehavior target={isExternalLink?"blank":""} href={buttonLink? buttonLink : ""}>
                     <Button className="my-4 py-0.5 bg-accent text-light">{buttonText}</Button>
                 </Link>
             </div>

@@ -10,7 +10,7 @@ export default function Hero(
         <div style={{ backgroundImage: `url(${backgroundImage.src})`, }} className="w-full bg-cover bg-center " >
             <div className={clsx({
                 "columns-2 w-full flex flex-col md:flex-row  backdrop-blur-sm  backdrop-brightness-25  bg-blend-darken px-4 lg:px-20":true,
-                "lg:py-56 py-24 md:py-32": (subtext || buttonText || buttonLink)
+                "lg:py-56 py-24 md:py-48": (subtext || buttonText || buttonLink)
             }
             )}>
 
@@ -41,7 +41,7 @@ export default function Hero(
                         { buttonText || buttonLink ? (
                             <div className="flex h-1/2">
                                 <div className="flex w-full align-middle items-center">
-                                    <Link href={buttonLink ? buttonLink : ""}>
+                                    <Link target="_blank" href={buttonLink ? buttonLink : ""}>
                                         <Button variant="ghost" className="text-light border-accent" size="lg">{buttonText}</Button>
                                     </Link>
                                 </div>

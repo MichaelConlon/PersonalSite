@@ -33,7 +33,7 @@ let turqExperience = [
     {title:"Lead Developer - Full Stack",
     key: "primis",
     bullets: [
-        "pearheaded development, deployment, and monitoring initiatives as Lead Software Engineer, utilizing Java backend, Amazon RDS database, React frontend, and Netlify/Docker/AWS for seamless deployment processes."
+        "Spearheaded development, deployment, and monitoring initiatives as Lead Software Engineer, utilizing Java backend, Amazon RDS database, React frontend, and Netlify/Docker/AWS for seamless deployment processes."
         ,"Managed issues and contributions to the public GitHub repository, ensuring adherence to code quality standards and facilitating collaboration among team members."
         ,"Maintained accountability for all aspects of the software development lifecycle, from conception to deployment, ensuring efficient delivery of high-quality solutions"
     ]}
